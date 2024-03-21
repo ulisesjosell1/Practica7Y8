@@ -1,0 +1,7 @@
+<h1>crear una nueva orden</h1>
+{{msg}}
+<form action="/nueva/" method="post">
+{% csrf_token %}
+{{form}}
+<button>Realizar</button>
+</form>

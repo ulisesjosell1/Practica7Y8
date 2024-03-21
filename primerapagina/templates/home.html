@@ -1,0 +1,18 @@
+<h1>Bienvenid@, Esta es la pantalla de Inicio</h1>
+{% if user.is_authenticated %}
+<li>
+    <a href="/nueva/">Ingresar nueva orden</a>
+</li>
+<li>
+    <a href="/salir/">Cerrar sesion</a>
+</li>
+
+{% else %}
+<li>
+    <a href="/registro/">Registrese</a>
+</li>
+<li>
+    <a href="/login/">Inicio sesion</a>
+</li>
+
+{% endif %}

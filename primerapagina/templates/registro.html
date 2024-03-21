@@ -1,0 +1,7 @@
+<h1>Formulario de registro</h1>
+{{msg}}
+<form method="post" action="/registro/">
+    {% csrf_token %}
+    {{form}}
+<button>Enviar</button>
+</form>
